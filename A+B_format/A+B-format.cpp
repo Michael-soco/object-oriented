@@ -2,7 +2,7 @@
 #include<string.h>
 int main()
 {
-	int a,b,sum,length,mod,i;
+	int a,b,sum,length, mod,i;
 	char string[9];
 	scanf("%d%d",&a,&b);
 	sum=a+b;
