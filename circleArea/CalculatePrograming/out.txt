@@ -1,0 +1,14 @@
+The account of the questions:
+2
+The operation is:
+(3+1)*(8+1)=?
+The correct answer is:
+36
+Your answer is:
+3
+The operation is:
+(8/1)*(1/1)=?
+The correct answer is:
+80
+Your answer is:
+1
