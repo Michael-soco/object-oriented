@@ -1,0 +1,72 @@
+#include<iostream>
+#include<cstdlib>
+#include<ctime>
+using namespace std;
+srand((unsigned)time(0));
+class Random
+{
+	int x;
+public:
+	void  random(int n)
+	{
+		x=rand() % n;
+	}
+};
+class RandomNumber:public Random
+{
+	int a,b,c,d;
+public:
+	void random(int n)
+	{
+		a = rand() % n;
+		b = rand() % n;
+		c = rand() % n;
+		d = rand() % n;
+	}
+	void showA()
+	{
+		cout << a;
+	}
+	void showB()
+	{
+		cout << b;
+	}
+	void showC()
+	{
+		cout << c;
+	}
+	void showD()
+	{
+		cout << d;
+	}
+};
+class RandomOperation:public RandomNumber
+{
+	char x, y, z,a[3];
+public:
+	void  random(int n)
+	{
+		for(int i=0;i<3;i++)
+		switch (rand() % 3)
+		{
+		case 0:a[i] = '+';break;
+		case 1:a[i] = '-';break;
+		case 2:a[i] = '*';break;
+		case 3:a[i] = '/';break;
+		}
+	}
+	void val()
+	{
+		x = a[0];y = a[1];z = a[2];
+	}
+	void showOper()
+	{
+		showA();
+		cout << x;
+		showB();
+		cout << y;
+		showD();
+		cout << z;
+		showD();
+	}
+};
